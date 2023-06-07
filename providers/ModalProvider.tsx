@@ -7,12 +7,10 @@ import AuthModal from "@/components/AuthModal";
 import UploadModal from "@/components/UploadModal";
 import { ProductWithPrice } from "@/types";
 
-interface ModalProviderProps {
-  products: ProductWithPrice[];
-}
 
-const ModalProvider: React.FC<ModalProviderProps> = ({
-  products
+
+const ModalProvider = ({
+  
 }) => {
   const [isMounted, setIsMounted] = useState(false);
 
